@@ -8,7 +8,7 @@ using System.Text;
 
 namespace eShopSolution.Data.Configurations
 {
-    public class CatagoryConfiguration : IEntityTypeConfiguration<Category>
+    public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<Category> builder)
         {

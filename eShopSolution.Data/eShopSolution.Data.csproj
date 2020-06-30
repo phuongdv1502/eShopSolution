@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Configurations\AppRoleConfiguration.cs" />
+    <Compile Remove="Configurations\AppUserConfiguration.cs" />
+    <Compile Remove="Entity\AppRole.cs" />
+    <Compile Remove="Entity\AppUser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -14,6 +21,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.1" />
   </ItemGroup>
 
 </Project>
